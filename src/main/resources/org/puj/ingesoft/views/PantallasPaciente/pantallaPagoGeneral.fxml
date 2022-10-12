@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="64.0" fitWidth="69.0" layoutX="318.0" layoutY="12.0">
+         <image>
+            <Image url="@../icono.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="15.0" text="Health App" textFill="RED">
+         <font>
+            <Font name="AppleGothic Regular" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="415.0" endY="70.99999237060547" layoutY="11.0" startY="71.0" stroke="RED" />
+      <Line endX="299.0" layoutX="115.0" layoutY="636.0" startX="-115.00001525878906" stroke="RED" />
+      <Label layoutX="35.0" layoutY="234.0" minWidth="-Infinity" prefHeight="26.0" prefWidth="353.0" text="Por Favor escoja alguna de las opciones">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </Label>
+      <Button layoutX="79.0" layoutY="321.0" mnemonicParsing="false" onAction="#pagoAfiliacion" prefHeight="58.0" prefWidth="266.0" text="Pago Afiliacion" />
+      <Button layoutX="79.0" layoutY="430.0" mnemonicParsing="false" onAction="#pagoCitaMedica" prefHeight="58.0" prefWidth="266.0" text="Pago Cita Medica" />
+      <ImageView fitHeight="124.0" fitWidth="125.0" layoutX="35.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombreUsuario" layoutX="166.0" layoutY="117.0" prefHeight="17.0" prefWidth="152.0" text="Nombre" />
+      <Label fx:id="identificacionUsuario" layoutX="166.0" layoutY="160.0" prefHeight="17.0" prefWidth="152.0" text="Identificación" />
+      <Line endX="415.0" endY="70.99999237060547" layoutX="-1.0" layoutY="146.0" startY="71.0" stroke="RED" />
+      <Button layoutX="79.0" layoutY="548.0" mnemonicParsing="false" onAction="#volver" prefHeight="58.0" prefWidth="266.0" text="Regresar" />
+   </children>
+</AnchorPane>

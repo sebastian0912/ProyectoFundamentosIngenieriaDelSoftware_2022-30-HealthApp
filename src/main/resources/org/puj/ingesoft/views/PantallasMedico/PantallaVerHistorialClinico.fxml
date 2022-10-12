@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="60.0" stroke="RED" strokeType="INSIDE" width="414.0" />
+      <Text fill="WHITE" layoutX="119.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORIAL CLINICO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paciente:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Paciente:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="12.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antecedentes:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="10.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagnóstico:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="11.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="12.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado de Entradas Clínicas:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelNombrePaciente" layoutX="138.0" layoutY="70.0" prefHeight="17.0" prefWidth="248.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelIdPaciente" layoutX="138.0" layoutY="94.0" prefHeight="17.0" prefWidth="248.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAntecedentes" alignment="TOP_LEFT" layoutX="13.0" layoutY="139.0" prefHeight="70.0" prefWidth="386.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDiagnostico" alignment="TOP_LEFT" layoutX="10.0" layoutY="235.0" prefHeight="70.0" prefWidth="386.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDescripcion" alignment="TOP_LEFT" layoutX="14.0" layoutY="328.0" prefHeight="70.0" prefWidth="386.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaEntradasClinicas" layoutX="10.0" layoutY="438.0" prefHeight="200.0" prefWidth="386.0">
+        <columns>
+          <TableColumn fx:id="columnaFecha" prefWidth="111.0" text="FECHA" />
+          <TableColumn fx:id="columnaMedico" prefWidth="144.0" text="MEDICO" />
+            <TableColumn fx:id="columnaTipo" prefWidth="130.0" text="TIPO" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonVerEntradaClinica" layoutX="226.0" layoutY="647.0" mnemonicParsing="false" onAction="#verEntradaClinica" style="-fx-background-color: red;" text="Ver Entrada Clínica" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonVolver" layoutX="11.0" layoutY="647.0" mnemonicParsing="false" onAction="#volver" prefHeight="39.0" prefWidth="173.0" text="Volver">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

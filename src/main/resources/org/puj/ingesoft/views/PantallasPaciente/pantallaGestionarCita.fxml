@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="57.0" prefHeight="402.0" prefWidth="266.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="609.0" layoutX="2.0" strokeType="INSIDE" width="387.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.6330166270783848" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="0.4774346793349169" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.1116751269035533">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Label layoutX="163.0" layoutY="14.0" text="Detalles" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="42.0" text="Paciente">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="82.0" text="Modalidad">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="125.0" prefHeight="26.0" prefWidth="111.0" text="Centro Médico">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="187.0" text="Razón de la cita">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="razonCita" alignment="TOP_LEFT" layoutX="41.0" layoutY="223.0" onAction="#escribirRazonMed" prefHeight="102.0" prefWidth="284.0" promptText="Razón" />
+            <Button fx:id="volver" layoutX="227.0" layoutY="496.0" mnemonicParsing="false" onAction="#volverCitas" prefHeight="26.0" prefWidth="98.0" text="Volver">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="disponibilidad" layoutX="60.0" layoutY="496.0" mnemonicParsing="false" onAction="#verDisponibilidad" prefHeight="30.0" prefWidth="118.0" text="Disponibilidad">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="namePaciente" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="42.0" prefHeight="25.0" prefWidth="172.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="ModCita" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="82.0" prefHeight="25.0" prefWidth="172.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="nameCentro" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="126.0" prefHeight="25.0" prefWidth="172.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="188.0" layoutY="14.0" text="CITA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="299.0" layoutX="114.0" layoutY="677.0" startX="-115.00001525878906" stroke="RED" />
+   </children>
+</AnchorPane>

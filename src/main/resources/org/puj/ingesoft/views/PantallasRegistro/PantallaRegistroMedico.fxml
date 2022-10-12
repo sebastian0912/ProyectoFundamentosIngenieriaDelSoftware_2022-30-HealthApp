@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="324.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icono.png" />
+         </image></ImageView>
+      <Line endX="207.0" endY="-7.62939453125E-6" layoutX="207.0" layoutY="74.0" startX="-207.0" startY="-7.62939453125E-6" stroke="#d91010" />
+      <TextField fx:id="Nombre" layoutX="216.0" layoutY="155.0" promptText="Nombre" />
+      <TextField fx:id="Edad" layoutX="215.0" layoutY="261.0" promptText="Edad" />
+      <TextField fx:id="Cedula" layoutX="215.0" layoutY="191.0" promptText="Cedula" />
+      <TextField fx:id="TarjeTPro" layoutX="216.0" layoutY="377.0" promptText="Tarjeta Profesional" />
+      <TextField fx:id="Especializacion" layoutX="216.0" layoutY="418.0" promptText="Especialización" />
+      <Label layoutX="56.0" layoutY="156.0" text="Nombre">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="262.0" text="Edad">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="192.0" text="Cedula">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="227.0" text="FechaNacimiento">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="376.0" text="Tarjeta Profesional">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="417.0" text="Especializacion">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="100.0" text="Ingrese lo siguientes datos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="registrarse" layoutX="245.0" layoutY="493.0" mnemonicParsing="false" onAction="#regMed" prefHeight="43.0" prefWidth="118.0" text="Registrarse" />
+      <Label layoutX="52.0" layoutY="337.0" text="Contraseña">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="5.0" text="Health App" textFill="RED">
+         <font>
+            <Font name="AppleGothic Regular" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="207.0" endY="-7.62939453125E-6" layoutX="206.0" layoutY="632.0" startX="-207.0" startY="-7.62939453125E-6" stroke="#d91010" />
+      <TextField fx:id="username" layoutX="212.0" layoutY="300.0" promptText="Username" />
+      <Label layoutX="52.0" layoutY="299.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Contraseña" layoutX="214.0" layoutY="338.0" promptText="Contraseña" />
+      <Button layoutX="65.0" layoutY="493.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="43.0" prefWidth="118.0" text="Cancelar" />
+      <TextField fx:id="dia" layoutX="211.0" layoutY="226.0" prefHeight="26.0" prefWidth="42.0" promptText="día" />
+      <TextField fx:id="mes" layoutX="258.0" layoutY="226.0" prefHeight="26.0" prefWidth="48.0" promptText="mes" />
+      <TextField fx:id="año" layoutX="310.0" layoutY="226.0" prefHeight="26.0" prefWidth="60.0" promptText="año" />
+   </children>
+</AnchorPane>

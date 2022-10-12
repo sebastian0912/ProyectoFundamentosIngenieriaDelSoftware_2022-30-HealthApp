@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="52.0" layoutY="-8.0" stroke="RED" strokeType="INSIDE" width="414.0" />
+      <Text fill="WHITE" layoutX="133.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTRADA CLÍNICA">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="15.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:" wrappingWidth="108.4951171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textoDescripcíon" alignment="TOP_LEFT" layoutX="15.0" layoutY="187.0" opacity="0.66" prefHeight="82.0" prefWidth="385.0" text="Ingrese una descripción de Entrada Clínica.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="15.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fármacos:" wrappingWidth="108.4951171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textoFarmaco" alignment="TOP_LEFT" layoutX="15.0" layoutY="304.0" opacity="0.66" prefHeight="82.0" prefWidth="385.0" text="Ingrese los fármacos recetados en la Entrada Clínica.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="15.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Entrada Clínica:" wrappingWidth="202.4951171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonTerminarEntrada" layoutX="274.0" layoutY="661.0" mnemonicParsing="false" onAction="#terminarEntrada" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: red;" text="Terminar" textFill="WHITE" />
+      <Button fx:id="botonVerHistorial" layoutX="144.0" layoutY="661.0" mnemonicParsing="false" onAction="#verHistorialClinico" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: red;" text="Ver Historial Clinico" textFill="WHITE" />
+      <Button fx:id="botonVolver" layoutX="14.0" layoutY="661.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="125.0" text="Volver" />
+      <Text layoutX="15.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paciente:" wrappingWidth="79.4951171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id:" textAlignment="RIGHT" wrappingWidth="71.4951171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Line endX="307.0" layoutX="107.0" layoutY="145.0" startX="-107.0" stroke="RED" />
+      <Label fx:id="labelNombrePaciente" layoutX="95.0" layoutY="73.0" prefHeight="27.0" prefWidth="288.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelIdPaciente" layoutX="95.0" layoutY="100.0" prefHeight="27.0" prefWidth="288.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxTipoEntrada" layoutX="14.0" layoutY="434.0" prefHeight="25.0" prefWidth="385.0" />
+   </children>
+</Pane>

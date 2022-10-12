@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="134.0" layoutY="14.0" text="Citas Agendadas" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaCitas" layoutX="29.0" layoutY="56.0" prefHeight="575.0" prefWidth="356.0">
+        <columns>
+          <TableColumn fx:id="columnaFecha" prefWidth="177.0" text="FECHA">
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="fecha" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="columnaPaciente" prefWidth="178.0" text="PACIENTE">
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="nombrePaciente" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="botonEntradaClinica" layoutX="258.0" layoutY="649.0" mnemonicParsing="false" onAction="#seleccionarEntradaClinica" text="Entrada Clinica">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonVolver" layoutX="29.0" layoutY="649.0" mnemonicParsing="false" onAction="#seleccionarVolver" prefHeight="37.0" prefWidth="126.0" text="Volver">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

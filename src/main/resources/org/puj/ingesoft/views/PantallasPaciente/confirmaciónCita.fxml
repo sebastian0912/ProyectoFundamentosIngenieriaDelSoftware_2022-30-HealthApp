@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutY="45.0" prefHeight="5.0" prefWidth="414.0" />
+      <Label fx:id="titleInfoCita" layoutX="129.0" layoutY="14.0" text="Información de Cita" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fechcaCita" layoutX="24.0" layoutY="212.0" text="Fecha" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="medicoCita" layoutX="22.0" layoutY="123.0" text="Profesional" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="centroMedicoCita" layoutX="22.0" layoutY="79.0" text="Centro Médico" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="modalidad" layoutX="24.0" layoutY="168.0" text="Modalidad" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="534.0" prefHeight="5.0" prefWidth="414.0" />
+      <Label fx:id="infoCentMed" alignment="CENTER_RIGHT" layoutX="206.0" layoutY="84.0" prefHeight="17.0" prefWidth="176.0" text="Label" />
+      <Label fx:id="infoNombreMed" alignment="CENTER_RIGHT" layoutX="206.0" layoutY="128.0" prefHeight="17.0" prefWidth="176.0" text="Label" />
+      <Label fx:id="infoModCita" alignment="CENTER_RIGHT" layoutX="206.0" layoutY="173.0" prefHeight="17.0" prefWidth="176.0" text="Label" />
+      <Label fx:id="infoFechaCita" alignment="CENTER_RIGHT" layoutX="206.0" layoutY="217.0" prefHeight="17.0" prefWidth="176.0" text="Label" />
+      <Button fx:id="volverM" layoutX="246.0" layoutY="607.0" mnemonicParsing="false" onAction="#volver" prefHeight="26.0" prefWidth="105.0" text="Volver" />
+      <Button fx:id="confirmarCita" layoutX="67.0" layoutY="607.0" mnemonicParsing="false" onAction="#confirmarCita" prefHeight="26.0" prefWidth="105.0" text="Confirmar Cita" />
+   </children>
+</AnchorPane>
